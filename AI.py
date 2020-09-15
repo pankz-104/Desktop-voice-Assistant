@@ -54,6 +54,7 @@ def takeCommand():
     return query
 
 def sendEmail(to, content):
+    # requires email access to less secure apps to send email 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
